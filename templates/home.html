@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+</head>
+<body>
+
+	<div align="center">
+		<h1>Google Login</h1>
+		{% if user.is_authenticated %}
+		<p>Welcome, {{ user.username }} !</p>
+		{% else %}
+		<h1>Welcome Friend, please log in</h1>
+		{% endif %}
+	</div>
+
+</body>
+</html>
